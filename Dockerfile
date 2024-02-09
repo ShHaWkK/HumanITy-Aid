@@ -15,8 +15,7 @@
 # If reproducability is important, consider using a versioned tag
 # (e.g., alpine:3.17.2) or SHA (e.g., alpine@sha256:c41ab5c992deb4fe7e5da09f67a8804a46bd0592bfdf0b1847dde0e0889d2bff).
 FROM php:8-apache
-
-
+COPY . /var/www/html
 RUN apt-get update
 
 # PHP extensions
